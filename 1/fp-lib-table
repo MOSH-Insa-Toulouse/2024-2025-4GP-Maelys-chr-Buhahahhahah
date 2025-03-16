@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Arduino_MountingHole")(type "KiCad")(uri "${KICAD9_TEMPLATE_DIR}/Arduino_Mega/Arduino_MountingHole.pretty")(options "")(descr ""))
+  (lib (name "projet_capteur_artur")(type "KiCad")(uri "${KIPRJMOD}/projet_capteur_artur.pretty")(options "")(descr ""))
+)

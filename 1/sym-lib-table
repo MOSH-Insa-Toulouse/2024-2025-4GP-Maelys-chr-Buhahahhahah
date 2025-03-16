@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "projet_capteur_artur")(type "KiCad")(uri "${KIPRJMOD}/projet_capteur_artur.pretty/projet_capteur_artur.kicad_sym")(options "")(descr ""))
+)
