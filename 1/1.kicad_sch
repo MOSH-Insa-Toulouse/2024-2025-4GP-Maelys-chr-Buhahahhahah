@@ -2943,12 +2943,6 @@
 		(uuid "135b11c7-de93-4113-b73b-8b2e95bbe18d")
 	)
 	(junction
-		(at 156.21 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "18915198-0cb2-499e-9a7f-ebde12224a36")
-	)
-	(junction
 		(at 175.26 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2973,12 +2967,6 @@
 		(uuid "53ec5a42-5f7a-4346-ab01-9b75cb07b78f")
 	)
 	(junction
-		(at 143.51 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5ec1a1a7-6688-4adb-a6e3-426159a8c522")
-	)
-	(junction
 		(at 224.79 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2995,12 +2983,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8eeb1cf3-e1f5-4baa-a6d7-ae7a98745daf")
-	)
-	(junction
-		(at 135.89 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cb4a879a-0a67-4e99-9119-27cf5ac5618d")
 	)
 	(junction
 		(at 201.93 120.65)
@@ -3444,16 +3426,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 137.16) (xy 143.51 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6acd65cc-70e3-4bd4-940b-3f0f46f3ff11")
-	)
-	(wire
-		(pts
 			(xy 72.39 90.17) (xy 85.09 90.17)
 		)
 		(stroke
@@ -3471,16 +3443,6 @@
 			(type solid)
 		)
 		(uuid "73d4774c-1387-4550-b580-a1cc0ac89b89")
-	)
-	(wire
-		(pts
-			(xy 133.35 137.16) (xy 135.89 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f189f06-9f5e-43bf-82b3-432545149c52")
 	)
 	(wire
 		(pts
@@ -3674,16 +3636,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 144.78) (xy 156.21 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc6623a6-c079-4c9b-9483-7aa77fb69215")
-	)
-	(wire
-		(pts
 			(xy 72.39 57.15) (xy 74.93 57.15)
 		)
 		(stroke
@@ -3764,16 +3716,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 135.89) (xy 135.89 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dace860e-fb63-4194-9c24-99e9d18aa87a")
-	)
-	(wire
-		(pts
 			(xy 146.05 104.14) (xy 146.05 107.95)
 		)
 		(stroke
@@ -3791,16 +3733,6 @@
 			(type default)
 		)
 		(uuid "dd35354b-8965-498c-937b-ccb80435640c")
-	)
-	(wire
-		(pts
-			(xy 135.89 135.89) (xy 135.89 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3de3aa2-b0ab-4f75-a757-b582c871ded0")
 	)
 	(wire
 		(pts
@@ -3881,16 +3813,6 @@
 			(type solid)
 		)
 		(uuid "f8de70cd-e47d-4e80-8f3a-077e9df93aa8")
-	)
-	(wire
-		(pts
-			(xy 133.35 139.7) (xy 133.35 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbde52c5-da27-45f1-b9ba-a750010bb230")
 	)
 	(wire
 		(pts
@@ -4031,16 +3953,6 @@
 			(justify right bottom)
 		)
 		(uuid "54be04e4-fffa-4f7f-8a5f-d0de81314e8f")
-	)
-	(label "*5"
-		(at 134.62 135.89 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "693ffe5a-a8da-47c3-a770-d0f767a999e8")
 	)
 	(label "7"
 		(at 85.09 82.55 180)
@@ -5337,73 +5249,6 @@
 			(project "1"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 128.27 139.7 180)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3698f760-524e-4800-ac18-ccc79a99fec6")
-		(property "Reference" "Entree_Sin1"
-			(at 128.27 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 128.27 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
-			(at 128.27 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 128.27 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 128.27 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2d5c5c45-5086-4c09-8ea2-9b0390189af8")
-		)
-		(pin "2"
-			(uuid "2672bd9d-58b1-4090-9fb6-5b24c69f9a9c")
-		)
-		(instances
-			(project "1"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "Entree_Sin1")
 					(unit 1)
 				)
 			)
