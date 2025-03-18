@@ -4331,7 +4331,7 @@
 	)
 	(text_box "Modules"
 		(exclude_from_sim no)
-		(at 39.37 22.86 0)
+		(at 118.11 25.4 0)
 		(size 149.86 57.15)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -9588,7 +9588,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "projet_capteur_artur:potentiometre_digit"
 			(at 233.68 57.15 0)
 			(effects
 				(font
