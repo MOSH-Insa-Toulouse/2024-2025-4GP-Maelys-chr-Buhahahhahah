@@ -39,7 +39,7 @@
         "pads": {
           "drill": 1.0,
           "height": 2.0,
-          "width": 2.54
+          "width": 2.0
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -61,11 +61,11 @@
       ],
       "drc_exclusions": [
         [
-          "silk_edge_clearance|168580000|86648100|58c6d72f-4bb9-4dd3-8643-c635155dbbd9|275c43ea-2754-4ccd-868b-01cfb310b8ed",
+          "unconnected_items|160960000|97460000|a80e67a4-bfda-4e6a-a067-56e1a25ecdd4|8a2a0c3c-afd3-4fc0-8335-c8cdebe19069",
           ""
         ],
         [
-          "silk_edge_clearance|168580000|86766195|58c6d72f-4bb9-4dd3-8643-c635155dbbd9|b81fb292-5a25-4c0a-864b-59c5b481ce1f",
+          "unconnected_items|163500000|97460000|b068aef3-4a13-483a-9c1b-52bdc636923a|29fcb139-bd4d-46c2-a1ef-edb27596c197",
           ""
         ]
       ],
@@ -559,7 +559,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerber/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

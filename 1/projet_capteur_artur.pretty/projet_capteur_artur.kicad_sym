@@ -368,7 +368,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U2"
-			(at 2.54 -3.81 0)
+			(at 9.144 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -376,7 +376,7 @@
 			)
 		)
 		(property "Value" "LTC1050"
-			(at 2.54 -6.35 0)
+			(at 9.144 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -507,6 +507,60 @@
 					)
 				)
 				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 1.27 -10.16 90)
+				(length 3.81)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 3.81 -10.16 90)
+				(length 3.81)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 6.35 -10.16 90)
+				(length 3.81)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)

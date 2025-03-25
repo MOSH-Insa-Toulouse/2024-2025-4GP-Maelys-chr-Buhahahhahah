@@ -3976,8 +3976,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 5.08 5.08 0)
+			(property "Reference" "LTC1050_1"
+				(at 4.826 6.858 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3985,14 +3985,14 @@
 				)
 			)
 			(property "Value" "LTC1050"
-				(at 7.62 2.54 0)
+				(at 4.826 4.318 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 				(at 24.13 -12.7 0)
 				(effects
 					(font
@@ -4010,13 +4010,12 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Precision Low Noise, Low Input Bias Current Operational Amplifier, SOIC-8"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "single operational amplifier"
@@ -4124,6 +4123,42 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at 1.27 -8.89 90)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 5.08 -8.89 90)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin output line
 					(at 7.62 0 180)
 					(length 2.54)
@@ -4135,6 +4170,24 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 8.89 -8.89 90)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4428,6 +4481,10 @@
 		(uuid "f7846409-4881-420a-a133-e23e84bc8619")
 	)
 	(no_connect
+		(at 85.09 67.31)
+		(uuid "1dc927fb-2b8d-41ea-942b-bb42d178a963")
+	)
+	(no_connect
 		(at 207.01 66.04)
 		(uuid "4cb610ea-dc11-4c68-aa2d-1b876a1f7bc8")
 	)
@@ -4440,16 +4497,24 @@
 		(uuid "61839701-2519-462f-82e6-c5d458dab11f")
 	)
 	(no_connect
+		(at 193.04 137.16)
+		(uuid "686bc77c-a93c-4ebc-a1de-50d332e161d3")
+	)
+	(no_connect
+		(at 196.85 137.16)
+		(uuid "76d40a21-1e7e-483b-b891-d7d95e1b8c4f")
+	)
+	(no_connect
 		(at 31.75 90.17)
 		(uuid "9e386c41-f356-4b49-ace3-0c511d1f83f6")
 	)
 	(no_connect
-		(at 85.09 62.23)
-		(uuid "b03703f5-6873-468d-b610-6bdb7431f136")
-	)
-	(no_connect
 		(at 44.45 54.61)
 		(uuid "d181157c-7812-47e5-a0cf-9580c905fc86")
+	)
+	(no_connect
+		(at 189.23 137.16)
+		(uuid "d1f435ce-b0c5-4f89-b58e-727f7a8cb51a")
 	)
 	(no_connect
 		(at 207.01 53.34)
@@ -5397,6 +5462,16 @@
 		)
 		(uuid "23f0c933-49f0-4410-a8db-8b017f48dadc")
 	)
+	(label "7"
+		(at 201.93 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "281f1191-53df-42ca-ab4c-848f7be7163f")
+	)
 	(label "*9"
 		(at 161.29 57.15 180)
 		(effects
@@ -5426,16 +5501,6 @@
 			(justify right bottom)
 		)
 		(uuid "35bc5b35-b7b2-44d5-bbed-557f428649b2")
-	)
-	(label "7"
-		(at 201.93 63.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3c650e0b-22a9-41f2-b268-4165a9b0c881")
 	)
 	(label "12"
 		(at 85.09 62.23 180)
@@ -5607,16 +5672,6 @@
 		)
 		(uuid "ccb58899-a82d-403c-b30b-ee351d622e9c")
 	)
-	(label "8"
-		(at 201.93 60.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ccba861c-16c5-4a85-b487-2e936abf9e98")
-	)
 	(label "SDA{slash}A4"
 		(at 137.16 68.58 270)
 		(effects
@@ -5646,6 +5701,16 @@
 			(justify left bottom)
 		)
 		(uuid "de819ae4-b245-474b-a426-865ba877b8a2")
+	)
+	(label "8"
+		(at 201.93 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e293a55e-644b-4207-8346-2a7c4e16d549")
 	)
 	(label "SDA{slash}A4"
 		(at 31.75 92.71 0)
@@ -6063,28 +6128,6 @@
 			)
 		)
 	)
-	(global_label "CS"
-		(shape input)
-		(at 85.09 67.31 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "db1c716c-5e67-4b7b-88d1-dd9568720aea")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.6498 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "A1"
 		(shape input)
 		(at 29.21 173.99 180)
@@ -6125,6 +6168,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CS"
+		(shape input)
+		(at 85.09 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f0b93081-a7a5-406a-ac34-eae234acb2bc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 90.6498 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -8110,7 +8175,7 @@
 		(dnp no)
 		(uuid "73fe50e8-91dd-458c-99cf-5d82280f0896")
 		(property "Reference" "LTC1050_1"
-			(at 190.5 132.08 0)
+			(at 192.786 121.412 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8118,7 +8183,7 @@
 			)
 		)
 		(property "Value" "LTC1050"
-			(at 190.5 134.62 0)
+			(at 192.786 123.952 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8165,6 +8230,15 @@
 		)
 		(pin "7"
 			(uuid "bd53fd5c-54d4-40b4-bf12-87e2665802a4")
+		)
+		(pin "5"
+			(uuid "232d4e51-9d55-4211-82fc-ae2dd38e60f1")
+		)
+		(pin "1"
+			(uuid "759ee796-cf52-4e1b-ac52-b1293ed27364")
+		)
+		(pin "8"
+			(uuid "eb6c0789-d211-4df2-8b62-059ac82fe304")
 		)
 		(instances
 			(project "1"
