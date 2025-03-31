@@ -11,10 +11,9 @@
 7. [Programme Arduino](#programme-arduino)  
 8. [Application Android APK sous MIT App Inventor](#application-android-apk-sous-mit-app-inventor)  
 9. [Fabrication du shield](#fabrication-du-shield)  
-10. [Banc de test](#banc-de-test)  
-11. [Résultats](#résultats)  
-12. [Datasheet](#datasheet)  
-13. [Conclusion](#conclusion)  
-14. [Contacts](#contacts)
+10. [Banc de test](#banc-de-test)   
+11. [Datasheet](#datasheet)  
+12. [Conclusion](#conclusion)  
+13. [Contacts](#contacts)
 
 ## 1. Présentation du projet
