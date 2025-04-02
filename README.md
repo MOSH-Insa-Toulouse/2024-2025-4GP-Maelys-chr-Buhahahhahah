@@ -32,7 +32,7 @@ Pour ce projet, nous avions différents livrables à rendre :
 
 ## 3. Matériel nécessaire
 - Résistances : 1 de 1 kOhms, 1 de 10 kOhms, 2 de 100 kOhms pour l'amplificateur transimpédance. 1 de 320 Ohms pour la Led et 1 de 10 kOhms pour le flex sensor
-- Capacités : 2 de 100 nF, 1 de 1 uF
+- Capacités : 2 de 100 nF, 1 de 1 uF pour l'amplificateur transimpédance.
 - Arduino Uno
 - Amplificateur opérationnel LTC1050
 - Module Bluetooth HC05
