@@ -31,13 +31,14 @@ Pour ce projet, nous avions différents livrables à rendre :
 - Une datasheet du capteur de contrainte
 
 ## 3. Matériel nécessaire
-- Résistances : 2 de 1 kOhms, 2 de 10 kOhms, 2 de 100 kOhms
+- Résistances : 1 de 1 kOhms, 1 de 10 kOhms, 2 de 100 kOhms pour l'amplificateur transimpédance. 1 de 320 Ohms pour la Led et 1 de 10 kOhms pour le flex sensor
 - Capacités : 2 de 100 nF, 1 de 1 uF
 - Arduino Uno
 - Amplificateur opérationnel LTC1050
 - Module Bluetooth HC05
-- Encodeur rotatoire KY_040
+- Encodeur rotatoire 
 - Ecran OLED 128x64
+- Potientomètre digital MCP41050
 - Flex Sensor
 - Servo moteur
 - Led
