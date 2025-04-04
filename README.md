@@ -42,3 +42,11 @@ Pour ce projet, nous avions différents livrables à rendre :
 - Flex Sensor
 - Servo moteur
 - Led
+
+## 4. Simulation du circuit électronique sous LT spice
+Ce dossier contient le schéma du circuit analogique associé au capteur graphite. Celui-ci intègre un amplificateur transimpédance ainsi qu’un filtre, permettant d’obtenir un signal exploitable par la suite.
+
+En effet, le capteur génère un courant très faible, de l’ordre de 100 nA en moyenne. L’amplification permet donc de rendre le signal mesurable de manière fiable.
+Les filtres jouent un rôle essentiel en supprimant les interférences, notamment celles à 50 Hz liées au réseau électrique, ainsi que d'autres parasites susceptibles de dégrader la qualité du signal.
+
+Ci-dessous, vous trouverez une capture d'écran des simulations réalisées sur LTSpice illustrant le fonctionnement du circuit :
