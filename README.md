@@ -75,6 +75,6 @@ Cette étape du projet avait pour objectif de concevoir le PCB du circuit transi
 - **Routage du circuit** généré via la vue schématique.
 - **Mise en place d’un plan de masse** pour relier efficacement les pistes au GND.
 
-Vous trouverez ci-dessous l’ensemble des **symboles et empreintes personnalisés**, ainsi que **la vue schématique du circuit** et le **PCB final**.
-### Symboles et empreintes
+Voici le schéma électrique de l'ensemble de notre montage :
+
 
