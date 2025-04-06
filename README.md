@@ -60,7 +60,7 @@ Trois filtres ont été intégrés au circuit :
 
 Et trois autres filtres, visibles sur le schéma, assurent le nettoyage du signal :
 
-- 🟩 Filtre en entrée (R1, C1 – vert) : filtre passe-bas passif, fréquence de coupure ≈ 160 Hz, pour atténuer les bruits en courant dès l’entrée du signal.  
+- 🟩 Filtre en entrée (R1, C1 – vert) : filtre passe-bas passif, fréquence de coupure ≈ 16 Hz, pour atténuer les bruits en courant dès l’entrée du signal.  
 - 🟥 Filtre dans la boucle AOP (R3, C4 – rouge) : filtre passe-bas actif, fréquence de coupure ≈ 1,6 Hz, efficace contre les interférences à 50 Hz du réseau électrique.  
 - 🟪 Filtre en sortie (R6, C2 – violet) : filtre passe-bas avec une fréquence de coupure d’environ 1,6 kHz, pour éliminer les parasites générés lors du traitement du signal.
 
