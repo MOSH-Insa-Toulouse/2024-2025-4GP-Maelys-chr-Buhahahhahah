@@ -88,7 +88,7 @@ Voici le résultat final obtenu de notre routage :
 
 Au cours de notre projet, nous avons rencontré plusieurs erreurs qu’il est important de signaler afin d’éviter qu’elles ne se reproduisent :
 
-- **Encodeur rotatif** :  
+- **Encodeur rotatoire** :  
   Le modèle présent dans KiCad ne correspondait pas exactement au composant réel que nous avons utilisé. Il a donc été nécessaire d'interchanger les connexions des broches Switch et Clock.
 
 - **Servomoteur** :  
