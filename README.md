@@ -80,6 +80,7 @@ Voici le schéma électrique de l'ensemble de notre montage :
 
 Nous avons ensuite conçu les empreintes physiques de nos composants afin de pouvoir les positionner correctement sur le PCB et nous avons fait le routage.
 La principale difficulté rencontrée a été d’optimiser le placement des composants afin d’éviter l’utilisation de vias, notamment pour les connexions au plan de masse (GND).
+Objectif reussi nous avons utilisé 0 via !
 
 Voici le résultat final obtenu de notre routage :
 ![routage](./images/routage.png)
