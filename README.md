@@ -6,15 +6,14 @@
 2. [Livrables](#livrables)  
 3. [Matériel nécessaire](#matériel-nécessaire)  
 4. [Simulation du circuit électronique sous LTspice](#simulation-du-circuit-électronique-sous-ltspice)  
-5. [Circuit électronique](#circuit-électronique)  
-6. [Création de notre PCB sous KiCad](#création-de-notre-pcb-sous-kicad)  
-7. [Programme Arduino](#programme-arduino)  
-8. [Application Android APK sous MIT App Inventor](#application-android-apk-sous-mit-app-inventor)  
-9. [Fabrication du shield](#fabrication-du-shield)  
-10. [Banc de test](#banc-de-test)   
-11. [Datasheet](#datasheet)  
-12. [Conclusion](#conclusion)  
-13. [Contacts](#contacts)
+5. [Création de notre PCB sous KiCad](#création-de-notre-pcb-sous-kicad)  
+6. [Programme Arduino](#programme-arduino)  
+7. [Application Android APK sous MIT App Inventor](#application-android-apk-sous-mit-app-inventor)  
+8. [Fabrication du shield](#fabrication-du-shield)  
+9. [Banc de test](#banc-de-test)   
+10. [Datasheet](#datasheet)  
+11. [Conclusion](#conclusion)  
+12. [Contacts](#contacts)
 
 ## 1. Présentation du projet
 Ce projet s’inscrit dans le cadre de l’Unité de Formation « Du capteur au banc de test » du département Génie Physique de l’INSA Toulouse. Inspiré de l’article "Pencil Drawn Strain Gauges and Chemiresistor on Paper", publié en 2014 dans Scientific Reports, l’objectif est de concevoir un capteur de déformation low-tech à base de papier et de graphite. 
@@ -44,7 +43,6 @@ Pour ce projet, nous avions différents livrables à rendre :
 - Led
   
 ## 4. Simulation du circuit électronique sous LTSpice
-
 Ce dossier contient le schéma du circuit analogique associé au capteur graphite. Celui-ci intègre un amplificateur transimpédance ainsi que plusieurs filtres passe-bas, permettant d’obtenir un signal exploitable par la suite.
 
 Le capteur délivre un courant très faible, de l’ordre de 100 nA en moyenne. Sans traitement, ce signal serait difficile à exploiter. L’amplificateur permet donc de convertir ce courant en une tension mesurable, tandis que les filtres atténuent les perturbations indésirables.
@@ -52,11 +50,9 @@ Le capteur délivre un courant très faible, de l’ordre de 100 nA en moyenne. 
 Les interférences à 50 Hz, liées au réseau électrique, ainsi que d’autres parasites (bruits de l’alimentation, de l’horloge, etc.) peuvent fortement impacter la qualité du signal. C’est pourquoi un filtrage soigneux est nécessaire.
 
 ### Choix de l’amplificateur
-
-Nous avons choisi l’amplificateur opérationnel (AOP) LTC1050 car il est spécifiquement conçu pour traiter de très faibles courants d’entrée. Son offset de tension très faible garantit une grande précision dans la conversion courant/tension, sans fausser les mesures analysées par l’ADC (convertisseur analogique-numérique).
+Nous avons choisi l’amplificateur opérationnel (AOP) LTC1050 car il est spécifiquement conçu pour traiter de très faibles courants d’entrée. Son offset de tension très faible garantit une grande précision dans la conversion courant/tension.
 
 ### Les filtres
-
 Trois filtres ont été intégrés au circuit :
 
 - 🟨 Rectangle jaune : simulation du capteur  
@@ -69,3 +65,15 @@ Et trois autres filtres, visibles sur le schéma, assurent le nettoyage du signa
 - 🟪 Filtre en sortie (R6, C2 – violet) : filtre passe-bas avec une fréquence de coupure d’environ 1,6 kHz, pour éliminer les parasites générés lors du traitement du signal.
 
 ### Schéma de simulation
+
+## 5. Conception de notre PCB sous Kicad
+Cette étape du projet avait pour objectif de concevoir le PCB du circuit transimpédance à l’aide du logiciel KiCad, en s’appuyant sur un template de carte Arduino Uno. Plusieurs étapes ont été nécessaires :
+
+- **Création de la schématique** du circuit transimpédance, incluant la définition de symboles personnalisés pour les composants absents de la bibliothèque KiCad.
+- **Conception des empreintes physiques** de ces composants, en prenant en compte leurs caractéristiques techniques : nombre de pins, espacement, dimensions, géométrie, etc.
+- **Routage du circuit** généré via la vue schématique.
+- **Mise en place d’un plan de masse** pour relier efficacement les pistes au GND.
+
+Vous trouverez ci-dessous l’ensemble des **symboles et empreintes personnalisés**, ainsi que **la vue schématique du circuit** et le **PCB final**.
+### Symboles et empreintes
+
