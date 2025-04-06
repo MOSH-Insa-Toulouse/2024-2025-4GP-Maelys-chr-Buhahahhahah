@@ -85,7 +85,7 @@ Voici le résultat final obtenu de notre routage :
 ![routage](./images/routage.png)
 
 Voici la version 3D : 
-![3D](./images/3D.png)
+![3D](./images/3D.JPG)
 ### ⚠️ Remarques importantes pour les futurs étudiants !!!
 
 Au cours de notre projet, nous avons rencontré plusieurs erreurs qu’il est important de signaler afin d’éviter qu’elles ne se reproduisent :
