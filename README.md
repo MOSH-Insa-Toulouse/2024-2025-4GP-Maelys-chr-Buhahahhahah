@@ -6,10 +6,10 @@
 2. [Livrables](#livrables)  
 3. [Matériel nécessaire](#matériel-nécessaire)  
 4. [Simulation du circuit électronique sous LTspice](#simulation-du-circuit-électronique-sous-ltspice)  
-5. [Création de notre PCB sous KiCad](#création-de-notre-pcb-sous-kicad)  
-6. [Programme Arduino](#programme-arduino)  
-7. [Application Android APK sous MIT App Inventor](#application-android-apk-sous-mit-app-inventor)  
-8. [Fabrication du shield](#fabrication-du-shield)  
+5. [Création de notre PCB sous KiCad](#création-de-notre-pcb-sous-kicad)
+6. [Fabrication du shield](#fabrication-du-shield)
+7. [Programme Arduino](#programme-arduino)  
+8. [Application Android APK sous MIT App Inventor](#application-android-apk-sous-mit-app-inventor)   
 9. [Banc de test](#banc-de-test)   
 10. [Datasheet](#datasheet)  
 11. [Conclusion](#conclusion)  
@@ -84,6 +84,8 @@ La principale difficulté rencontrée a été d’optimiser le placement des com
 Voici le résultat final obtenu de notre routage :
 ![routage](./images/routage.png)
 
+Voici la version 3D : 
+![3D](./images/3D.png)
 ### ⚠️ Remarques importantes pour les futurs étudiants !!!
 
 Au cours de notre projet, nous avons rencontré plusieurs erreurs qu’il est important de signaler afin d’éviter qu’elles ne se reproduisent :
@@ -99,3 +101,6 @@ Au cours de notre projet, nous avons rencontré plusieurs erreurs qu’il est im
 
 - **Entrée de l’amplificateur opérationnel** :  
   Les entrées **+** et **–** de l’AOP ont été inversées par erreur. Il est important de bien vérifier leur affectation dans le schéma et lors du câblage.
+
+## 6. Fabrication du shield 
+
