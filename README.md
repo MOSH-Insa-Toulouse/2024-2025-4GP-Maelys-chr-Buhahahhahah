@@ -77,3 +77,9 @@ Cette étape du projet avait pour objectif de concevoir le PCB du circuit transi
 
 Voici le schéma électrique de l'ensemble de notre montage :
 ![Schéma complet kicad](./images/schémacomplet.png)
+
+Nous avons ensuite conçu les empreintes physiques de nos composants afin de pouvoir les positionner correctement sur le PCB.
+La principale difficulté rencontrée a été d’optimiser le placement des composants afin d’éviter l’utilisation de vias, notamment pour les connexions au plan de masse (GND).
+
+Voici le résultat final obtenu :
+![routage](./images/routage.png)
