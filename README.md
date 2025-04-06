@@ -104,4 +104,17 @@ Au cours de notre projet, nous avons rencontré plusieurs erreurs qu’il est im
   Les entrées **+** et **–** de l’AOP ont été inversées par erreur. Il est important de bien vérifier leur affectation dans le schéma et lors du câblage.
 
 ## 6. Fabrication du shield 
+Grâce à notre projet réalisé sous KiCad, nous avons pu générer le masque de gravure de notre PCB. Nous avons ensuite transmis notre fichier à Cathy, qui s’est chargée de l’impression et de la fabrication du circuit.
 
+Elle a procédé ainsi :
+
+1. Insolation UV d’une plaque en époxy recouverte d’une fine couche de cuivre et d’une résine photosensible.
+2. Développement de la plaque dans un révélateur pour éliminer la résine non exposée.
+3. Gravure des pistes dans un bain de perchlorure de fer, afin de retirer le cuivre non protégé.
+4. Nettoyage final à l’acétone pour enlever les résidus de résine restants.
+
+Un grand merci à Cathy pour le temps qu’elle a consacré à la fabrication de notre PCB!
+
+### Assemblage du circuit
+Nous avons ensuite réalisé le perçage de la plaquette afin de pouvoir y insérer les différents composants selon le schéma généré avec KiCad.  
+Une fois le perçage terminé, nous avons procédé à la soudure des composants sur la carte, en respectant le plan de câblage.
