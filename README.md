@@ -43,29 +43,29 @@ Pour ce projet, nous avions différents livrables à rendre :
 - Servo moteur
 - Led
   
-## 4. 🧪 Simulation du circuit électronique sous LTSpice
+## 4. Simulation du circuit électronique sous LTSpice
 
-Ce dossier contient le schéma du **circuit analogique** associé au capteur graphite. Celui-ci intègre un **amplificateur transimpédance** ainsi que plusieurs **filtres passe-bas**, permettant d’obtenir un signal exploitable par la suite.
+Ce dossier contient le schéma du circuit analogique associé au capteur graphite. Celui-ci intègre un amplificateur transimpédance ainsi que plusieurs filtres passe-bas, permettant d’obtenir un signal exploitable par la suite.
 
-Le capteur délivre un **courant très faible**, de l’ordre de **100 nA en moyenne**. Sans traitement, ce signal serait difficile à exploiter. L’amplificateur permet donc de convertir ce courant en une tension mesurable, tandis que les filtres atténuent les perturbations indésirables.
+Le capteur délivre un courant très faible, de l’ordre de 100 nA en moyenne. Sans traitement, ce signal serait difficile à exploiter. L’amplificateur permet donc de convertir ce courant en une tension mesurable, tandis que les filtres atténuent les perturbations indésirables.
 
-Les **interférences à 50 Hz**, liées au réseau électrique, ainsi que d’autres parasites (bruits de l’alimentation, de l’horloge, etc.) peuvent fortement impacter la qualité du signal. C’est pourquoi un filtrage soigneux est nécessaire.
+Les interférences à 50 Hz, liées au réseau électrique, ainsi que d’autres parasites (bruits de l’alimentation, de l’horloge, etc.) peuvent fortement impacter la qualité du signal. C’est pourquoi un filtrage soigneux est nécessaire.
 
-### 🔧 Choix de l’amplificateur
+### Choix de l’amplificateur
 
-Nous avons choisi l’amplificateur opérationnel (AOP) **LTC1050** car il est spécifiquement conçu pour traiter de très faibles courants d’entrée. Son **offset de tension très faible** garantit une grande précision dans la conversion courant/tension, sans fausser les mesures analysées par l’**ADC** (convertisseur analogique-numérique).
+Nous avons choisi l’amplificateur opérationnel (AOP) LTC1050 car il est spécifiquement conçu pour traiter de très faibles courants d’entrée. Son offset de tension très faible garantit une grande précision dans la conversion courant/tension, sans fausser les mesures analysées par l’ADC (convertisseur analogique-numérique).
 
-### 🎛️ Les filtres
+### Les filtres
 
 Trois filtres ont été intégrés au circuit :
 
-- 🟨 **Rectangle jaune** : simulation du **capteur**  
-- 🟧 **Rectangle orange** : simulation du **bruit injecté**
+- 🟨 Rectangle jaune : simulation du capteur  
+- 🟧 Rectangle orange : simulation du bruit 
 
 Et trois autres filtres, visibles sur le schéma, assurent le nettoyage du signal :
 
-- 🟩 **Filtre en entrée** (R1, C1 – vert) : filtre passe-bas **passif**, fréquence de coupure ≈ **160 Hz**, pour atténuer les bruits en courant dès l’entrée du signal.  
-- 🟥 **Filtre dans la boucle AOP** (R3, C4 – rouge) : filtre passe-bas **actif**, fréquence de coupure ≈ **1,6 Hz**, efficace contre les interférences à **50 Hz** du réseau électrique.  
-- 🟪 **Filtre en sortie** (R6, C2 – violet) : filtre passe-bas avec une fréquence de coupure d’environ **1,6 kHz**, pour éliminer les parasites générés lors du traitement du signal.
+- 🟩 Filtre en entrée (R1, C1 – vert) : filtre passe-bas passif, fréquence de coupure ≈ 160 Hz, pour atténuer les bruits en courant dès l’entrée du signal.  
+- 🟥 Filtre dans la boucle AOP (R3, C4 – rouge) : filtre passe-bas actif, fréquence de coupure ≈ 1,6 Hz, efficace contre les interférences à 50 Hz du réseau électrique.  
+- 🟪 Filtre en sortie (R6, C2 – violet) : filtre passe-bas avec une fréquence de coupure d’environ 1,6 kHz, pour éliminer les parasites générés lors du traitement du signal.
 
-### 🖥️ Schéma de simulation
+### Schéma de simulation
