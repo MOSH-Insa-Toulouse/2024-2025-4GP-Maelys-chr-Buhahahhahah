@@ -76,5 +76,4 @@ Cette étape du projet avait pour objectif de concevoir le PCB du circuit transi
 - **Mise en place d’un plan de masse** pour relier efficacement les pistes au GND.
 
 Voici le schéma électrique de l'ensemble de notre montage :
-
-
+![Schéma complet kicad](./images/schémacomplet.pnp)
