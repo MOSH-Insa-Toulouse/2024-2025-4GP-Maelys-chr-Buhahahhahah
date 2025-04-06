@@ -65,7 +65,7 @@ Et trois autres filtres, visibles sur le schéma, assurent le nettoyage du signa
 - 🟪 Filtre en sortie (R6, C2 – violet) : filtre passe-bas avec une fréquence de coupure d’environ 1,6 kHz, pour éliminer les parasites générés lors du traitement du signal.
 
 ### Schéma de simulation
-![Schéma LTSpice](./images/ltspice.JPG)
+![Schéma LTSpice](./images/lt_spice.JPG)
 
 ## 5. Conception de notre PCB sous Kicad
 Cette étape du projet avait pour objectif de concevoir le PCB du circuit transimpédance à l’aide du logiciel KiCad, en s’appuyant sur un template de carte Arduino Uno. Plusieurs étapes ont été nécessaires :
