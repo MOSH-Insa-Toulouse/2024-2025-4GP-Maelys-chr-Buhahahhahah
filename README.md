@@ -78,8 +78,24 @@ Cette étape du projet avait pour objectif de concevoir le PCB du circuit transi
 Voici le schéma électrique de l'ensemble de notre montage :
 ![Schéma complet kicad](./images/schémacomplet.png)
 
-Nous avons ensuite conçu les empreintes physiques de nos composants afin de pouvoir les positionner correctement sur le PCB.
+Nous avons ensuite conçu les empreintes physiques de nos composants afin de pouvoir les positionner correctement sur le PCB et nous avons fait le routage.
 La principale difficulté rencontrée a été d’optimiser le placement des composants afin d’éviter l’utilisation de vias, notamment pour les connexions au plan de masse (GND).
 
-Voici le résultat final obtenu :
+Voici le résultat final obtenu de notre routage :
 ![routage](./images/routage.png)
+
+### ⚠️ Remarques importantes pour les futurs étudiants !!!
+
+Au cours de notre projet, nous avons rencontré plusieurs erreurs qu’il est important de signaler afin d’éviter qu’elles ne se reproduisent :
+
+- **Encodeur rotatif** :  
+  Le modèle présent dans KiCad ne correspondait pas exactement au composant réel que nous avons utilisé. Il a donc été nécessaire d'interchanger les connexions des broches Switch et Clock.
+
+- **Servomoteur** :  
+  Les broches GND et 5V étaient inversées par rapport au modèle. Nous avons résolu ce problème en utilisant un connecteur permettant de corriger le câblage.
+
+- **Potentiomètre numérique** :  
+  La broche CS (Chip Select) doit être connectée à la pin 10 de l’Arduino, et non à la pin 12, cette dernière étant utilisée par la bibliothèque SPI.
+
+- **Entrée de l’amplificateur opérationnel** :  
+  Les entrées **+** et **–** de l’AOP ont été inversées par erreur. Il est important de bien vérifier leur affectation dans le schéma et lors du câblage.
