@@ -125,7 +125,15 @@ Une fois le perçage terminé, nous avons procédé à la soudure des composants
   <img src="./images/shield.png" alt="shield" width="45%" />
 </p>
 
-## Programme Arduino 
-## Application Android APK sous MIT App Inventor
+## 7. Programme Arduino 
+## 8. Application Android APK sous MIT App Inventor
+Nous avons développé une application Android à l’aide de la plateforme MIT App Inventor. Cette application permet de recevoir les données envoyées par la carte Arduino via une connexion Bluetooth, établie grâce au module HC-05 intégré au shield de la carte.
+
+Une fois la connexion Bluetooth établie, l’application affiche en temps réel :
+
+- Un **graphe dynamique** représentant l’évolution de la **résistance du capteur graphite** en fonction du temps et des contraintes appliquées.
+- La **valeur instantanée** de cette résistance, ainsi que celle du **potentiomètre numérique** utilisé dans le montage.
+
+
 
 
