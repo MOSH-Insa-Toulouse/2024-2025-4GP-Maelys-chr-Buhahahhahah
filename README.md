@@ -135,7 +135,7 @@ Une fois la connexion Bluetooth établie, l’application affiche en temps réel
 - La **valeur instantanée** de cette résistance.
 
 Voici notre application : 
-![appli](./images/appli.JPG)
+<br/><p align="center"><img src="./images/appli.JPG" width="60%"></p><br/>
 
 
 
