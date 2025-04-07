@@ -134,6 +134,8 @@ Une fois la connexion Bluetooth établie, l’application affiche en temps réel
 - Un **graphe dynamique** représentant l’évolution de la résistance du capteur graphite et du capteur flex en fonction du temps et des contraintes appliquées.
 - La **valeur instantanée** de cette résistance.
 
+Voici notre application : 
+![appli](./images/appli.JPG)
 
 
 
