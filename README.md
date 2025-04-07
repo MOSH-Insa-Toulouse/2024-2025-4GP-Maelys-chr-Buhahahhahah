@@ -157,6 +157,12 @@ où :
 - e = 0,2 mm correspond à l’épaisseur du papier conducteur utilisé
 - D est le diamètre du demi-cercle sélectionné
 
+Voici notre banc de test avec ses dimensions : 
+<p align="center">
+  <img src="./images/bancdetest.JPG" alt="Soudure" width="45%" />
+  <img src="./images/dimension.JPG" alt="shield" width="45%" />
+</p>
+
 Nous avons ensuite tracé les courbes caractéristiques obtenues pour des crayons de duretés différentes (3B,HB et H) en situation de tension ou de compression, afin d’évaluer la réponse du capteur.
 
 
