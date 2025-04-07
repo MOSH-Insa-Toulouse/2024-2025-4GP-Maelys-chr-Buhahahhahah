@@ -109,10 +109,11 @@ Grâce à notre projet réalisé sous KiCad, nous avons pu générer le masque d
 
 Elle a procédé ainsi :
 
-1. Insolation UV d’une plaque en époxy recouverte d’une fine couche de cuivre et d’une résine photosensible.
-2. Développement de la plaque dans un révélateur pour éliminer la résine non exposée.
-3. Gravure des pistes dans un bain de perchlorure de fer, afin de retirer le cuivre non protégé.
-4. Nettoyage final à l’acétone pour enlever les résidus de résine restants.
+1. Impression du calque de la PCB
+2. Insolation UV d’une plaque en époxy recouverte d’une fine couche de cuivre et d’une résine photosensible.
+3. Développement de la plaque dans un révélateur pour éliminer la résine non exposée.
+4. Gravure des pistes dans un bain de perchlorure de fer, afin de retirer le cuivre non protégé.
+5. Nettoyage final à l’acétone pour enlever les résidus de résine restants.
 
 Un grand merci à Cathy pour le temps qu’elle a consacré à la fabrication de notre PCB!
 
