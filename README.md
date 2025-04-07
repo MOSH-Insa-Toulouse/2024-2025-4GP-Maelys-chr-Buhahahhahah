@@ -83,7 +83,8 @@ La principale difficulté rencontrée a été d’optimiser le placement des com
 Objectif réussi nous avons utilisé 0 via !
 
 Voici le résultat final obtenu de notre routage :
-![routage](./images/routage.png)
+<br/><p align="center"><img src="./images/routage.png" width="60%"></p><br/>
+
 
 Voici la version 3D : 
 ![3D](./images/3D.JPG)
