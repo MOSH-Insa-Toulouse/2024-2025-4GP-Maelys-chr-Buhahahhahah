@@ -123,4 +123,4 @@ Une fois le perçage terminé, nous avons procédé à la soudure des composants
 
 ![soudure](./images/soudure.HEIC) 
 
-![shield](./images/shield.HEIC)
+
