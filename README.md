@@ -120,5 +120,7 @@ Un grand merci à Cathy pour le temps qu’elle a consacré à la fabrication de
 ### Assemblage du circuit
 Nous avons ensuite réalisé le perçage de la plaquette afin de pouvoir y insérer les différents composants selon le schéma généré avec KiCad.  
 Une fois le perçage terminé, nous avons procédé à la soudure des composants sur la carte, en respectant le plan de câblage.
-<br/><p align="center"><img src="./images/soudure.png" width="60%"></p><br/>
-<br/><p align="center"><img src="./images/shield.png" width="60%"></p><br/>
+<p align="center">
+  <img src="./images/soudure.png" alt="Soudure" width="45%" />
+  <img src="./images/shield.png" alt="shield" width="45%" />
+</p>
