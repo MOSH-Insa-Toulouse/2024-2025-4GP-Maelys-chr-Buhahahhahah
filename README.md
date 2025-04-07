@@ -131,8 +131,8 @@ Nous avons développé une application Android à l’aide de la plateforme MIT 
 
 Une fois la connexion Bluetooth établie, l’application affiche en temps réel :
 
-- Un **graphe dynamique** représentant l’évolution de la **résistance du capteur graphite** en fonction du temps et des contraintes appliquées.
-- La **valeur instantanée** de cette résistance, ainsi que celle du **potentiomètre numérique** utilisé dans le montage.
+- Un **graphe dynamique** représentant l’évolution de la résistance du capteur graphite ou du capteur flex en fonction du temps et des contraintes appliquées.
+- La **valeur instantanée** de cette résistance.
 
 
 
