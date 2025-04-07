@@ -136,6 +136,27 @@ Une fois la connexion Bluetooth établie, l’application affiche en temps réel
 
 Voici notre application : 
 <br/><p align="center"><img src="./images/appli.JPG" width="60%"></p><br/>
+## 9. Banc de test
+Afin de spécifier le comportement de notre capteur graphite avec son montage transimpédance, nous avons conçu et fabriqué notre propre banc de test au FabLab de l’INSA.
 
+Ce dispositif se compose de demis-cercles de diamètres différents avec des trous préfabriqués, permettant d’insérer facilement le capteur. Une fois placé dans l’un des trous, le capteur épouse la courbure du demi-cercle correspondant. Cette contrainte appliquée provoque une variation de sa résistance électrique, que nous mesurons.
+
+Ces demi-cercles, utilisés pour appliquer une contrainte progressive sur le capteur, présentent les caractéristiques suivantes :
+
+- Diamètre du plus petit demi-cercle : 2 cm
+- Diamètre du plus grand demi-cercle : 4,5 cm
+- Incrément entre chaque modèle : 0,5 cm
+
+Ce montage nous permet de relier la déformation mécanique :
+ε = e / D
+
+à la variation relative de la résistance :
+ΔR / R₀
+
+où :
+- e = 0,2 mm correspond à l’épaisseur du papier conducteur utilisé
+- D est le diamètre du demi-cercle sélectionné
+
+Nous avons ensuite tracé les courbes caractéristiques obtenues pour des crayons de duretés différentes (3B,HB et H) en situation de tension ou de compression, afin d’évaluer la réponse du capteur.
 
 
