@@ -126,6 +126,36 @@ Une fois le perçage terminé, nous avons procédé à la soudure des composants
 </p>
 
 ## 7. Programme Arduino 
+Notre code contient les instructions nécessaires au bon fonctionnement de l’Arduino.  
+Il permet de traiter les données reçues du capteur graphite et de les transmettre au module Bluetooth HC-05, qui communique avec l’application APK. Il gère également l’interaction avec le potentiomètre digital ainsi qu’avec l’écran OLED.
+
+Plusieurs bibliothèques sont intégrées pour faciliter ces communications :
+
+- **Adafruit_SSD1306** : simplifie l’affichage des informations sur l’écran OLED  
+- **SPI** : permet de communiquer les nouvelles valeurs sur le potentiomètre digital
+- **SoftwareSerial** : permet la communication avec le module Bluetooth HC-05  
+
+Nous avons conçu un menu interactif composé de 4 options, accessible via l'encodeur rotatoire. Celui-ci permet de naviguer entre les différentes options, et une simple pression sur le bouton intégré permet de sélectionner et activer l’option souhaitée. 
+
+Voici notre menu : 
+
+1. **Configuration du capteur graphite**
+   - Met à jour la valeur du potentiomètre digital
+   - Récupère la résistance à plat (R₀)
+   - Transmet les données à l’application via Bluetooth
+
+2. **Configuration du capteur flex sensor**
+   - Récupère la valeur de la résistance de référence (R₀)
+   - Transmet les données à l’application via Bluetooth
+
+3. **Mesure du capteur graphite**
+   - Envoie des données ponctuelles du capteur graphite
+   - Les données sont reçues par l’application et enregistrées dans un fichier texte
+
+4. **Mesure du capteur flex sensor**
+   - Envoie des données ponctuelles du capteur flex
+   - Les données sont également reçues par l’application et sauvegardées dans un fichier texte
+  
 ## 8. Application Android APK sous MIT App Inventor
 Nous avons développé une application Android à l’aide de la plateforme MIT App Inventor. Cette application permet de recevoir les données envoyées par la carte Arduino via une connexion Bluetooth, établie grâce au module HC-05 intégré au shield de la carte.
 
