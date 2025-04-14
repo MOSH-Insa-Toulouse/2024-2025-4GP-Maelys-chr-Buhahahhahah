@@ -127,8 +127,7 @@ Une fois le perçage terminé, nous avons procédé à la soudure des composants
 
 ## 7. Programme Arduino 
 Notre code contient les instructions nécessaires au bon fonctionnement de l’Arduino.  
-Il permet de traiter les données reçues du capteur graphite et de les transmettre au module Bluetooth HC-05, qui communique avec l’application APK. Il gère également l’interaction avec le potentiomètre digital ainsi qu’avec l’écran OLED.
-
+Il permet de traiter les données reçues du capteur graphite et de les transmettre au module Bluetooth HC-05, qui communique avec l’application APK. Il gère également l’interaction avec le potentiomètre digital ainsi qu’avec l’écran OLED. De plus au niveau de notre code Arduino, il prends 10 mesures à la fois et envoie une moyenne arithmétique, le bruit à donc moins d'impact. 
 Plusieurs bibliothèques sont intégrées pour faciliter ces communications :
 
 - **Adafruit_SSD1306** : simplifie l’affichage des informations sur l’écran OLED  
@@ -165,7 +164,7 @@ Une fois la connexion Bluetooth établie, l’application affiche en temps réel
 - La **valeur instantanée** de cette résistance.
 
 Voici notre application : 
-<br/><p align="center"><img src="./images/appli.JPG" width="60%"></p><br/>
+<br/><p align="center"><img src="./images/appli.jpg" width="60%"></p><br/>
 ## 9. Banc de test
 Afin de spécifier le comportement de notre capteur graphite avec son montage transimpédance, nous avons conçu et fabriqué notre propre banc de test au FabLab de l’INSA.
 
@@ -194,5 +193,82 @@ Voici notre banc de test avec ses dimensions :
 </p>
 
 Nous avons ensuite tracé les courbes caractéristiques obtenues pour des crayons de duretés différentes (3B,HB et H) en situation de tension ou de compression, afin d’évaluer la réponse du capteur.
+<p align="center">
+  <img src="./images/graphique2.jpg" alt="Soudure" width="45%" />
+  <img src="./images/graphique1.jpg" alt="shield" width="45%" />
+</p>
+En théorie, lorsque le capteur est soumis en tension, la monocouche de graphite déposée sur le papier s’étire, ce qui augmente la distance entre les atomes de carbone. Cette augmentation de distance entraîne une hausse de la résistance du capteur. À l’inverse, lorsqu’il est soumis à une compression, les atomes de carbone se rapprochent, ce qui réduit la résistance du capteur. La variation relative de résistance dépend également du type de crayon utilisé pour tracer la couche de graphite. Plus le crayon est gras (par exemple, du H vers le HB jusqu’au 3B, qui contient le plus de carbone), plus la variation relative de résistance est faible. Bien que la théorie prévoie une augmentation de la résistance en tension et une diminution en compression, nos résultats expérimentaux ne suivent pas totalement cette tendance attendue :
+
+#### Compression  
+Sur la courbe de compression, on observe bien une diminution de la résistance relative \( \Delta R / R_0 \) lorsque la déformation augmente.  
+En revanche, le graphite 3B, censé avoir une plus faible variation relative en théorie (car plus conducteur), présente ici la plus grande variation de résistance.
+
+#### Extension  
+En tension, les résultats montrent bien une augmentation de la résistance avec la déformation. Cependant, contrairement à la théorie, le crayon HB présente ici la variation la plus élevée, suivi du H, tandis que le 3B varie beaucoup moins. Cela contredit l’idée selon laquelle les crayons les plus dures (ici H) varient le plus.
+
+#### Interprétation 
+En effet, plusieurs facteurs influencent le comportement réel du capteur :
+- L’uniformité du dépôt de graphite sur le capteur.
+- La qualité des crayons 
+- Le contact électrique entre le graphite et les pinces crocos.
+
+### Comparaison entre le capteur graphite et le capteur Flex sensor commercial
+
+Nous avons comparé les performances de notre capteur graphite artisanal à un capteur flex commercial. La comparaison s’appuie sur les résultats expérimentaux obtenus en extension :
+![graphflex](./images/graphique3.jpg)
+
+Les courbes montrent que le flex sensor présente une variation relative de résistance nettement plus marquée que nos capteurs en graphite.
+
+- **Capteur Flex sensor** : pente ≈ **237,36**
+- **Capteur graphite HB** : pente ≈ **43,5**
+- **Capteur graphite H** : pente ≈ **34,6**
+- **Capteur graphite 3B** : pente ≈ **20,3**
+
+Le capteur Flex est donc beaucoup plus sensible à la déformation. Sa réponse est plus régulière, linéaire et plus exploitable en conditions réelles.
+
+## Datasheet 
+## Conclusion
+Industrialisation du capteur graphite – Est-ce envisageable ?
+
+- Le **capteur graphite** est une solution low-cost. Toutefois, il reste moins précis, plus bruité et moins robuste face aux manipulations répétée. Cependant, il présente des avantages important comme le fait de pouvoir choisir la forme du capteur ainsi que la manière dont on souhaite déposer le graphite. Grâce à notre capteur on peut mesurer la variation de la resistance en fonction de la tension et de la compression. 
+- Le **flex sensor** offre une très bonne sensibilité, une meilleure fiabilité, et une stabilité supérieure sur le long terme. Il est donc plus adapté aux applications industrielles, même si son coût est plus élevé. Cependant, le flex sensor permet de mesurer la variation de la résistance que en fonction de la tension. 
+
+Notre capteur graphite remplit bien son rôle dans le cadre d’une expérimentation à faible coût, mais reste limité pour des usages où la précision et la répétabilité sont essentielles.
+
+### Vers une industrialisation possible : pistes d'amélioration
+
+Bien que notre capteur graphite artisanal ne soit pas directement industrialisable, plusieurs pistes d’amélioration permettraient d’envisager une version plus robuste, homogène et durable, adaptée à une production en série.
+
+#### Structure et matériaux
+
+- Remplacer le papier par un support plastique souple permettrait d’augmenter considérablement la durée de vie du capteur.
+- Alternativement, le papier peut être traité ou plastifié, afin de le protéger de l’humidité et des dégradations mécaniques tout en conservant sa flexibilité.
+- Encapsuler le capteur entre deux couches de plastique le protégerait des frottements, de la poussière et de l’humidité.
+
+#### Dépôt du graphite
+
+- Pour garantir une bonne homogénéité et une reproductibilité industrielle :
+  - Saturer la zone sensible en graphite, en déposant une grande quantité de matière,
+  - Utiliser des motifs de colle comme guide, puis saupoudrer de la poudre de graphite,
+  - Fixer la couche de graphite de manière durable, pour éviter qu’elle ne s'efface ou se dégrade avec le temps.
+
+#### Connectique
+
+- En remplaçant les pinces crocos par des plaques métalliques conductrices insérées entre les deux couches de plastique, on obtiendrait une connexion plus fiable.
+- Ce système permettrait également une meilleure intégration dans des circuits électroniques.
+
+#### Bénéfices attendus
+
+Ces améliorations permettraient :
+- Une meilleure homogénéité du comportement du capteur,
+- Une réduction de la sensibilité aux conditions environnementales (humidité, poussière, frottements),
+- Une durée de vie allongée,
+- Une intégration facilitée dans des applications à bas coût ou semi-industrielles.
+
+## Contacts
+
+Pour toutes questions éventuelles vous pouvez nous contacter par mail : 
+- Atrur Nersisyan : nersisya@insa-toulouse.fr
+- Maelys Christien : christien@insa-toulouse.fr
 
 
