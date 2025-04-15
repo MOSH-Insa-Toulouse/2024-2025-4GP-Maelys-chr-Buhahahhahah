@@ -163,11 +163,11 @@ Une fois la connexion Bluetooth établie, l’application après chaque mesure :
 - Un **graphe dynamique** représentant l’évolution de la résistance du capteur graphite et du capteur flex en fonction et des contraintes appliquées.
 - La **valeur instantanée** de cette résistance.
 
-L'algorthme d'utilisation étant suivant : 
-  1) A l'aide l'encodeur rotatoire naviguer vers "Conf. CG" ou "Conf. Flex" en fonction de ce que vous avez besoin de mésurer, puis appuyer sur le l'encodeur
-  2) Naviguer vers "Mes. CG" ou "Mes. Flex", et appuyer sur l'encodeur quand le capteur sera positionné sous le contrainte souhaité (initialement ça a été conçu pour notre banc de test, de 10mm à 22.5mm de rayon de courbure)
+L'algorithme d'utilisation étant le suivant : 
+  1) A l'aide de l'encodeur rotatoire naviguer vers "Conf. CG" ou "Conf. Flex" en fonction de ce que vous avez besoin de mésurer, puis appuyer sur l'encodeur
+  2) Naviguer vers "Mes. CG" ou "Mes. Flex", et appuyer sur l'encodeur quand le capteur sera positionné sous la contrainte souhaité (initialement ça a été conçu pour notre banc de test, de 10mm à 22.5mm de rayon de courbure)
   3) Appuyer encore plusieurs fois (tant que le led bleu est allumée)
-  4) Récuperer le fichier dans las déstination Documents/MOSH/ de votre téléphone
+  4) Récuperer le fichier dans la destination Documents/MOSH/ de votre téléphone
      
 Voici notre application : 
 <br/><p align="center"><img src="./images/appli.jpg" width="60%"></p><br/>
@@ -274,7 +274,7 @@ Ces améliorations permettraient :
 ## Contacts
 
 Pour toutes questions éventuelles vous pouvez nous contacter par mail : 
-- Atrur Nersisyan : nersisya@insa-toulouse.fr
+- Artur Nersisyan : nersisya@insa-toulouse.fr
 - Maelys Christien : christien@insa-toulouse.fr
 
 
