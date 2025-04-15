@@ -233,6 +233,7 @@ Les courbes montrent que le flex sensor présente une variation relative de rés
 Le capteur Flex est donc beaucoup plus sensible à la déformation. Sa réponse est plus régulière, linéaire et plus exploitable en conditions réelles.
 
 ## Datasheet 
+Vous pouvez consulter la datasheet de notre capteur [ici](./Datasheet.pdf)
 ## Conclusion
 Industrialisation du capteur graphite – Est-ce envisageable ?
 
