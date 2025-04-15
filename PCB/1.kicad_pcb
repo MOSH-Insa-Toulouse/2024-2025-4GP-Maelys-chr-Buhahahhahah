@@ -5195,6 +5195,28 @@
 			(uuid "7e0aedda-caae-4be3-90a9-7d2d0beb5cd4")
 		)
 		(embedded_fonts no)
+		(model "C:/Users/iamar/Documents/INSA/4A/S2/MOSH/KiCad/2024-2025-4GP-Maelys-chr-Buhahahhahah/3d-models/Pantalla OLED 0.96'' 128x64.stp"
+			(offset
+				(xyz 0.5 -1.5 11)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KICAD9_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x04_P2.54mm_Vertical.wrl"
+			(offset
+				(xyz -3.5 10.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -90)
+			)
+		)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
