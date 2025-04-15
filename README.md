@@ -172,7 +172,7 @@ L'algorthme d'utilisation étant suivant :
 Voici notre application : 
 <br/><p align="center"><img src="./images/appli.jpg" width="60%"></p><br/>
 ## 9. Banc de test
-Afin de spécifier le comportement de notre capteur graphite avec son montage transimpédance, nous avons conçu et fabriqué notre propre banc de test au FabLab de l’INSA.
+Afin de spécifier le comportement de notre capteur graphite avec son montage transimpédance, avec le binôme de Tristan et Yannis nous avons conçu et fabriqué notre propre banc de test au FabLab de l’INSA.
 
 Ce dispositif se compose de demis-cercles de diamètres différents avec des trous préfabriqués, permettant d’insérer facilement le capteur. Une fois placé dans l’un des trous, le capteur épouse la courbure du demi-cercle correspondant. Cette contrainte appliquée provoque une variation de sa résistance électrique, que nous mesurons.
 
@@ -207,7 +207,7 @@ En théorie, lorsque le capteur est soumis en tension, la monocouche de graphite
 
 #### Compression  
 Sur la courbe de compression, on observe bien une diminution de la résistance relative \( \Delta R / R_0 \) lorsque la déformation augmente.  
-En revanche, le graphite 3B, censé avoir une plus faible variation relative en théorie (car plus conducteur), présente ici la plus grande variation de résistance.
+En revanche, le graphite 3B, censé avoir une plus faible variation relative en théorie (car moins conducteur), présente ici la plus grande variation de résistance.
 
 #### Extension  
 En tension, les résultats montrent bien une augmentation de la résistance avec la déformation. Cependant, contrairement à la théorie, le crayon HB présente ici la variation la plus élevée, suivi du H, tandis que le 3B varie beaucoup moins. Cela contredit l’idée selon laquelle les crayons les plus dures (ici H) varient le plus.
@@ -216,7 +216,7 @@ En tension, les résultats montrent bien une augmentation de la résistance avec
 En effet, plusieurs facteurs influencent le comportement réel du capteur :
 - L’uniformité du dépôt de graphite sur le capteur.
 - La qualité des crayons 
-- Le contact électrique entre le graphite et les pinces crocos.
+- Le contact électrique entre le graphite et les pinces.
 
 ### Comparaison entre le capteur graphite et le capteur Flex sensor commercial
 
