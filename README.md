@@ -18,12 +18,12 @@
 ## 1. Présentation du projet
 Ce projet s’inscrit dans le cadre de l’Unité de Formation « Du capteur au banc de test » du département Génie Physique de l’INSA Toulouse. Inspiré de l’article "Pencil Drawn Strain Gauges and Chemiresistor on Paper", publié en 2014 dans Scientific Reports, l’objectif est de concevoir un capteur de déformation low-tech à base de papier et de graphite. 
 
-Le principe repose sur le fait que, lors d’une déformation du papier, la distance entre les particules de graphite préalablement déposées varie selon qu’il s’agisse d’une tension ou d’une compression. Cette variation entraîne une modification de la résistance électrique, et donc de la conductivité de la couche de graphite. Il est ainsi possible de mesurer cette variation de résistance pour en déduire la déformation appliquée. L’objectif du projet était de concevoir ce capteur dans son intégralité, en suivant toutes les étapes de développement : du design et de la fabrication du circuit imprimé (PCB), jusqu’à la programmation et aux tests du capteur.
+Le principe repose sur le fait que, lors d’une déformation du papier, la distance entre les particules de graphite préalablement déposées varie selon qu’il s’agisse d’une tension ou d’une compression. Cette variation entraîne une modification de la conductivité, et donc de la résistance électrique de la couche de graphite. Il est ainsi possible de mesurer cette variation de résistance pour en déduire la déformation appliquée. L’objectif du projet était de concevoir ce capteur dans son intégralité, en suivant toutes les étapes de développement : du design et de la fabrication du circuit imprimé (PCB), jusqu’à la programmation et aux tests du capteur.
 
 ## 2. Livrables
 Pour ce projet, nous avions différents livrables à rendre : 
 
-- Un shield PCB fonctionnel connecté à une carte Arduino UNO. Notre PCB contient un amplificateur transimpédance, un capteur bluetooth, un écran OLED. Ainsi qu'un flex sensor, un servo moteur, un potentiomètre digital et un encodeur rotatoir. Nous avons également rajouter une led de couleur bleu. 
+- Un shield PCB fonctionnel connecté à une carte Arduino UNO. Notre PCB contient un amplificateur transimpédance, un capteur bluetooth, un écran OLED. Ainsi qu'un flex sensor, un servo moteur, un potentiomètre digital et un encodeur rotatoir. Nous avons également rajouté une led de couleur bleu. 
 - Un code Arduino permettant de gérer le module bluetooth ainsi que les mesures du capteur de déformation et nos différents composants présent sur notre PCB.
 - Une application Android APK développée à l’aide du site MIT app inventor.
 - Un Banc de test que nous avons fabriqué
@@ -56,7 +56,7 @@ Nous avons choisi l’amplificateur opérationnel (AOP) LTC1050 car il est spéc
 Trois filtres ont été intégrés au circuit :
 
 - 🟨 Rectangle jaune : simulation du capteur  
-- 🟧 Rectangle orange : simulation du bruit 
+- 🟧 Rectangle orange + R5 : simulation du bruit 
 
 Et trois autres filtres, visibles sur le schéma, assurent le nettoyage du signal :
 
@@ -78,7 +78,7 @@ Cette étape du projet avait pour objectif de concevoir le PCB du circuit transi
 Voici le schéma électrique de l'ensemble de notre montage :
 ![Schéma complet kicad](./images/schémacomplet.png)
 
-Nous avons ensuite conçu les empreintes physiques de nos composants afin de pouvoir les positionner correctement sur le PCB et nous avons fait le routage.
+Nous avons conçu les empreintes physiques de nos composants afin de pouvoir les positionner correctement sur le PCB et nous avons fait le routage.
 La principale difficulté rencontrée a été d’optimiser le placement des composants afin d’éviter l’utilisation de vias, notamment pour les connexions au plan de masse (GND).
 Objectif réussi nous avons utilisé 0 via !
 
@@ -99,7 +99,7 @@ Au cours de notre projet, nous avons rencontré plusieurs erreurs qu’il est im
   Les broches GND et 5V étaient inversées par rapport au modèle. Nous avons résolu ce problème en utilisant un connecteur permettant de corriger le câblage.
 
 - **Potentiomètre numérique** :  
-  La broche CS (Chip Select) doit être connectée à la pin 10 de l’Arduino, et non à la pin 12, cette dernière étant utilisée par la bibliothèque SPI.
+  La broche CS (Chip Select) doit être connectée à la pin 10 de l’Arduino, et non à la pin 12, cette dernière étant utilisée par la bibliothèque SPI n'est pas disponile.
 
 - **Entrée de l’amplificateur opérationnel** :  
   Les entrées **+** et **–** de l’AOP ont été inversées par erreur. Il est important de bien vérifier leur affectation dans le schéma et lors du câblage.
@@ -127,7 +127,7 @@ Une fois le perçage terminé, nous avons procédé à la soudure des composants
 
 ## 7. Programme Arduino 
 Notre code contient les instructions nécessaires au bon fonctionnement de l’Arduino.  
-Il permet de traiter les données reçues du capteur graphite et de les transmettre au module Bluetooth HC-05, qui communique avec l’application APK. Il gère également l’interaction avec le potentiomètre digital ainsi qu’avec l’écran OLED. De plus au niveau de notre code Arduino, il prends 10 mesures à la fois et envoie une moyenne arithmétique, le bruit à donc moins d'impact. 
+Il permet de traiter les données reçues du capteur graphite et de les transmettre au module Bluetooth HC-05, qui communique avec l’application APK. Il gère également l’interaction avec le potentiomètre digital ainsi qu’avec l’écran OLED. De plus au niveau de notre code Arduino, il prend 10 mesures à la fois et envoie une moyenne arithmétique, le bruit à donc moins d'impact. 
 Plusieurs bibliothèques sont intégrées pour faciliter ces communications :
 
 - **Adafruit_SSD1306** : simplifie l’affichage des informations sur l’écran OLED  
@@ -158,11 +158,17 @@ Voici notre menu :
 ## 8. Application Android APK sous MIT App Inventor
 Nous avons développé une application Android à l’aide de la plateforme MIT App Inventor. Cette application permet de recevoir les données envoyées par la carte Arduino via une connexion Bluetooth, établie grâce au module HC-05 intégré au shield de la carte.
 
-Une fois la connexion Bluetooth établie, l’application affiche en temps réel :
+Une fois la connexion Bluetooth établie, l’application après chaque mesure :
 
-- Un **graphe dynamique** représentant l’évolution de la résistance du capteur graphite et du capteur flex en fonction du temps et des contraintes appliquées.
+- Un **graphe dynamique** représentant l’évolution de la résistance du capteur graphite et du capteur flex en fonction et des contraintes appliquées.
 - La **valeur instantanée** de cette résistance.
 
+L'algorthme d'utilisation étant suivant : 
+  1) A l'aide l'encodeur rotatoire naviguer vers "Conf. CG" ou "Conf. Flex" en fonction de ce que vous avez besoin de mésurer, puis appuyer sur le l'encodeur
+  2) Naviguer vers "Mes. CG" ou "Mes. Flex", et appuyer sur l'encodeur quand le capteur sera positionné sous le contrainte souhaité (initialement ça a été conçu pour notre banc de test, de 10mm à 22.5mm de rayon de courbure)
+  3) Appuyer encore plusieurs fois (tant que le led bleu est allumée)
+  4) Récuperer le fichier dans las déstination Documents/MOSH/ de votre téléphone
+     
 Voici notre application : 
 <br/><p align="center"><img src="./images/appli.jpg" width="60%"></p><br/>
 ## 9. Banc de test
@@ -172,9 +178,9 @@ Ce dispositif se compose de demis-cercles de diamètres différents avec des tro
 
 Ces demi-cercles, utilisés pour appliquer une contrainte progressive sur le capteur, présentent les caractéristiques suivantes :
 
-- Diamètre du plus petit demi-cercle : 2 cm
-- Diamètre du plus grand demi-cercle : 4,5 cm
-- Incrément entre chaque modèle : 0,5 cm
+- Diamètre du plus petit demi-cercle : 20 mm
+- Diamètre du plus grand demi-cercle : 45 mm
+- Incrément entre chaque modèle : 5 mm
 
 Ce montage nous permet de relier la déformation mécanique :
 ε = e / D
