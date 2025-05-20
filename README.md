@@ -206,7 +206,7 @@ Nous avons ensuite tracé les courbes caractéristiques obtenues pour des crayon
 En théorie, lorsque le capteur est soumis en tension, la monocouche de graphite déposée sur le papier s’étire, ce qui augmente la distance entre les atomes de carbone. Cette augmentation de distance entraîne une hausse de la résistance du capteur. À l’inverse, lorsqu’il est soumis à une compression, les atomes de carbone se rapprochent, ce qui réduit la résistance du capteur. La variation relative de résistance dépend également du type de crayon utilisé pour tracer la couche de graphite. Plus le crayon est gras (par exemple, du H vers le HB jusqu’au 3B, qui contient le plus de carbone), plus la variation relative de résistance est faible. Bien que la théorie prévoie une augmentation de la résistance en tension et une diminution en compression, nos résultats expérimentaux ne suivent pas totalement cette tendance attendue :
 
 #### Compression  
-Sur la courbe de compression, on observe bien une diminution de la résistance relative \( \Delta R / R_0 \) lorsque la déformation augmente.  
+Sur la courbe de compression, on observe bien une diminution de la résistance relative (ΔR / R₀) lorsque la déformation augmente.  
 En revanche, le graphite 3B, censé avoir une plus faible variation relative en théorie (car moins conducteur), présente ici la plus grande variation de résistance.
 
 #### Extension  
